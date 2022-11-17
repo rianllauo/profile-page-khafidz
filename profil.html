@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profil Page</title>
+</head>
+<body>
+    <!-- Start Navbar -->
+    <div class="container-nav">
+        <nav>
+            <ul>
+                <li><img src="img/logo.png" alt="logo" class="logo"></li>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="profil.html">My Project</a></li>
+            </ul>
+            <a href="contact.html" class="btn-contact">Contact Me</a>
+            <link rel="stylesheet" href="css/profil.css">
+        </nav>
+    </div>
+    <!-- End Navbar -->
+
+    <div class="container-projek">
+        <form onsubmit="addData()"">
+            <h1 class="title-projek">ADD MY PROJECT</h1>
+
+            <!-- Project Name -->
+            <div class="projek space">
+                <label for="">Project Name</label>
+                <input type="text" id="title-project">
+            </div>
+
+            <!-- Start Date && End Date -->
+            <div class="date space">
+                <div class="card-date">
+                    <label for="">Start Update</label>
+                    <input type="text" id="start-date">
+                </div>
+                <div class="card-date">
+                    <label for="">End Date</label>
+                    <input type="text" id="end-date">
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="description space">
+                <label for="">Description</label>
+                <textarea name="" id="content"></textarea>
+            </div>
+
+
+            <!-- checkbox -->
+            <div class="checkbox space">
+                <label for="">Technologies</label>
+                <div class="container-checkbox">
+                    <div class="card-checkbox">
+                        <input type="checkbox">
+                        <label for="" class="name-card-checkbox">Node Js</label>
+                    </div>
+                    <div class="card-checkbox">
+                        <label for="" class="name-card-checkbox">Next Js</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="card-checkbox">
+                        <input type="checkbox">
+                        <label for="" class="name-card-checkbox">React Js</label>
+                    </div>
+                    <div class="card-checkbox">
+                        <input type="checkbox">
+                        <label for="" class="name-card-checkbox">TypeScript</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Upload Image -->
+            <div class="upload space">
+                <label for="">Upload Image</label>
+                <input type="file" id="upload">
+            </div>
+
+            <button class="button-profil" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="container-myproject">
+        <h1 class="title-myproject">MY PROJECT</h1>
+        <div class="content-myproject">
+            <!-- Start JS -->
+            <div class="card-myproject">
+                <img src="img/myFoto.jpg" alt="">
+                <h3>Dumbways</h3>
+                <p>durasi: 3bulan</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquam harum aperiam, nesciunt temporibus laboriosam error, quis architecto quia ex esse enim recusandae facere, sequi sint culpa sit cum impedit!</p>
+                <div class="icon-myproject">
+                    <img src="img/facebook.png" alt="">
+                    <img src="img/instagram.png" alt="">
+                    <img src="img/twiter.png" alt="">
+                </div>
+                <div class="custom-myproject">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+            <!-- End JS -->
+        </div>
+    <div>
+</div>
+
+
+<script src="js/profil.js"></script>
+</body>
+</html>
